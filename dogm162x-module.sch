@@ -1,8 +1,35 @@
 EESchema Schematic File Version 2
-LIBS:dogm162x-module-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
 LIBS:1551_rf_module
 LIBS:1551mod_template
-LIBS:dogm162x-module-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -40,7 +67,7 @@ F 3 "" H 4200 1550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-dogm162x-module #PWR02
+L GND #PWR02
 U 1 1 55E82A40
 P 4000 1550
 F 0 "#PWR02" H 4000 1300 50  0001 C CNN
@@ -51,7 +78,7 @@ F 3 "" H 4000 1550 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND-RESCUE-dogm162x-module #PWR03
+L GND #PWR03
 U 1 1 55E82A70
 P 8400 2550
 F 0 "#PWR03" H 8400 2300 50  0001 C CNN
@@ -198,7 +225,7 @@ RS
 Text Label 6900 3050 1    60   ~ 0
 CS
 $Comp
-L GND-RESCUE-dogm162x-module #PWR07
+L GND #PWR07
 U 1 1 55E8336E
 P 6450 3400
 F 0 "#PWR07" H 6450 3150 50  0001 C CNN
@@ -253,7 +280,7 @@ F 3 "" H 9850 950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-dogm162x-module #PWR09
+L GND #PWR09
 U 1 1 55E89ADD
 P 9850 1600
 F 0 "#PWR09" H 9850 1350 50  0001 C CNN
@@ -282,7 +309,7 @@ short out when \nusing 5V supply
 Text Notes 10050 5300 0    60   ~ 0
 leave open when\nusing 5V supply
 $Comp
-L R-RESCUE-dogm162x-module R1
+L R R1
 U 1 1 55E89A9D
 P 7650 5300
 F 0 "R1" V 7730 5300 50  0000 C CNN
@@ -293,7 +320,7 @@ F 3 "" H 7650 5300 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R-RESCUE-dogm162x-module R2
+L R R2
 U 1 1 55E89AFE
 P 8250 5300
 F 0 "R2" V 8330 5300 50  0000 C CNN
