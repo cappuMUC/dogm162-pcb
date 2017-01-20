@@ -1,9 +1,9 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.2-stable)
+(kicad_pcb (version 4) (host pcbnew 4.0.4-1.fc25-product)
 
   (general
     (links 28)
-    (no_connects 6)
-    (area 139.949999 82.949999 200.050001 116.050001)
+    (no_connects 0)
+    (area 138.949999 82.949999 201.050001 116.050001)
     (thickness 1.6)
     (drawings 19)
     (tracks 68)
@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.25)
     (user_trace_width 0.5)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
@@ -187,7 +187,7 @@
       (net 11 /RS))
     (pad 40 thru_hole circle (at -24.34 -14.44) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask)
       (net 1 VCC))
-    (model D:/_GIT/dogm162-pcb/dog126x.wrl
+    (model ${KIPRJMOD}/dog126x.wrl
       (at (xyz -1.091776 -0.519118 0.142924))
       (scale (xyz 0.393701 0.393701 0.393701))
       (rotate (xyz 0 0 0))
