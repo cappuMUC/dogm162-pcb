@@ -30,6 +30,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:1551_rf_module
 LIBS:1551mod_template
+LIBS:dogm162x-module-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -331,10 +332,7 @@ Wire Wire Line
 Wire Wire Line
 	7600 2300 7950 2300
 Wire Wire Line
-	8400 2150 7600 2150
-Wire Wire Line
 	8400 2450 7600 2450
-Connection ~ 8400 2150
 Connection ~ 8400 2450
 Text Label 7700 2000 0    60   ~ 0
 A1
@@ -344,8 +342,8 @@ Text Label 7650 5650 1    60   ~ 0
 A1
 Text Label 8250 5650 1    60   ~ 0
 A2
-Text Notes 7200 4800 0    60   ~ 0
-15 Ohm at 3.3V\n35 Ohm at 5V
+Text Notes 7100 6400 0    60   ~ 0
+15 Ohm at 3.3V\n35 Ohm at 5V\n--------------------\nPlace R3 for serial\nconnection of the LEDs.
 Wire Notes Line
 	6950 4050 6950 6500
 $Bitmap
@@ -6009,7 +6007,7 @@ C7 38 12 8E 14 D5 DC D7 BA 17 34 EB B6 A1 96 82 71 9A 10 43 F0 13 10 3B 46 32 06
 EB A3 62 9E A6 09 AA 8A 5A CA E9 F3 29 65 10 91 C7 B9 0E E6 76 76 D4 39 27 84 98 50 6B 31 05 78 
 DC D0 5A 35 5F A7 09 2C 46 43 FC E5 F5 35 7F 7A F9 4C DA 85 BA 6A 24 CA 53 08 61 DF D6 ED E7 FB 
 FB F7 1F 6F DF DE BE FE 33 3A 5F B8 70 E1 C2 85 0B 17 2E 5C B8 70 E1 3F F0 1B D5 0A 09 AC 31 04 
-2D 6F 00 00 00 00 49 45 4E 44 AE 42 60 82 B4 
+2D 6F 00 00 00 00 49 45 4E 44 AE 42 60 82 00 
 EndData
 $EndBitmap
 Text Notes 7100 4200 0    60   ~ 0
@@ -6052,4 +6050,27 @@ Wire Wire Line
 	10400 1650 9650 1650
 Wire Wire Line
 	10400 1750 9650 1750
+Wire Wire Line
+	7600 2150 7950 2150
+Text Label 7700 2150 0    60   ~ 0
+C1
+$Comp
+L R R3
+U 1 1 58837EC3
+P 8600 5300
+F 0 "R3" V 8680 5300 50  0000 C CNN
+F 1 "0R" V 8600 5300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8530 5300 30  0001 C CNN
+F 3 "" H 8600 5300 30  0000 C CNN
+	1    8600 5300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8600 5150 8600 4150
+Wire Wire Line
+	8600 5450 8600 5800
+Text Label 8600 5650 1    60   ~ 0
+A2
+Text Label 8600 5050 1    60   ~ 0
+C1
 $EndSCHEMATC
