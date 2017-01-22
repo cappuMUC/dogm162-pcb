@@ -1,4 +1,4 @@
-update=Fr 20 Jan 2017 19:33:36 CET
+update=So 22 Jan 2017 08:12:03 CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,13 @@ LibName28=contrib
 LibName29=valves
 LibName30=dog162x.pretty/1551_rf_module
 LibName31=dog162x.pretty/1551mod_template
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
