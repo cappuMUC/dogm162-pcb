@@ -7,3 +7,5 @@ This is a KiCad project to create a universal PCB for a DOGM162 LCD by [Electron
 It includes the PCB project and a 3D model of the display.
 
 ![](/pictures/dog162x_front.png)
+
+![](/pictures/dog162x_rev0_test.png)
